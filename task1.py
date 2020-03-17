@@ -11,11 +11,11 @@ class Car:
         return self.car_mass + self.pax_count * 70
 
 
-
 class IllegalCarError(Exception):
     def __init__(self, message):
         super().__init__(message)
 
 
 car1 = Car(4, 1999, 8)
+
 car1.pax_count = 8
