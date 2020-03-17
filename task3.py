@@ -1,17 +1,20 @@
 def password():
-    number_list = [i for i in range(372 ** 2, 809 ** 2+1)]
+    # creating list of all number from 372 ** 2 to 809 ** 2
+    number_list = [i for i in range(372 ** 2, 809 ** 2 + 1)]
 
-    check = []
-    n = 0
-    rep_num1 = []
-    final = []
+    check = []  # list of divided numbers into list of digits
+    final = []  # final list with number of results
 
+    # making lists of all digit in each number
     for j in number_list:
         check.append(list(map(int, str(j))))
 
+    # finding all numbers with given criteria
     for i in range(len(check)):
-        rep_num1 = []
-        n = 0
+        rep_num1 = []  # support list to compare number of repeating values
+        n = 0  # number of  repeats
+
+        # checking all criteria for the password
         for j in range(len(check[i]) - 1):
             if check[i][j] <= check[i][j + 1]:
                 if check[i][j] == check[i][j + 1]:
@@ -23,6 +26,7 @@ def password():
             else:
                 break
 
-    print('%d numbers meet the criteria'% len(final))
+    print('%d numbers meet the criteria' % len(final))
+
 
 password()
