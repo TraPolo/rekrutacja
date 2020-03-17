@@ -17,5 +17,6 @@ class IllegalCarError(Exception):
 
 
 car1 = Car(4, 1999, 8)
-
-car1.pax_count = 8
+car1.pax_count = 3
+if car1.pax_count < 1 or car1.pax_count > 5:
+    raise IllegalCarError('car doesn\'t meet requirements')
