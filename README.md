@@ -7,9 +7,10 @@ This project contains 3 tasks prepared for internship admission.
 Project is created in Python 3.8 in PyCharm
 	
 ## Content 
-First task was to implement car class with gave requirements and error exception.
+First task was the implementation of car class with given requirements and error exception.
 
-Second chapter include writing script for task management using argparse library.
+Second chapter included writing script for task management using argparse library.
+Script was testing in the command line. All tasks can be stored in the csv file.
 
 In the last task  the code for finding possible password with passed restrictions was implemented.
 
